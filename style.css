@@ -26,16 +26,15 @@
   right: 0;
   bottom: 0;
   display: none;
-
-  &.clpi-m-show {
-    display: block;
-  }
+}
+#clpi-m.clpi-m-show {
+  display: block;
 }
 
 #clpi-p {
   width: 308px;
   padding: 10px;
-  box-shadow: 0 15px 35px rgba(50,50,93,0.06), 0 5px 15px rgba(0,0,0,0.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.06), 0 5px 15px rgba(0, 0, 0, 0.07);
   border: 1px solid #ecefff;
   border-radius: 5px;
   position: absolute;
@@ -62,8 +61,8 @@
 #clpi-o {
   width: 14px;
   height: 14px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 1px 1px 3px 1px rgba(0,0,0,0.15);
-  background: rgba(255,255,255,.5);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   margin-top: -7px;
   margin-left: -7px;
@@ -100,11 +99,11 @@
 }
 
 #clpi-a:after {
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
 }
 
 #clpi-a:before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
 }
 
 .clpi-r {
@@ -117,16 +116,15 @@
   position: absolute;
   right: 0;
   top: 1px;
-
-  input {
-    position: relative;
-    width: 200px;
-    height: 30px;
-    margin: 0;
-    z-index: 3;
-    opacity: 0;
-    cursor: pointer;
-  }
+}
+.clpi-r input {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: 0;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .clpi-e {
@@ -141,7 +139,7 @@
   left: 100%;
   height: 34px;
   width: 8px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   margin-left: -4px;
   border: 2px solid #fff;
   box-sizing: border-box;
@@ -154,12 +152,12 @@
 }
 
 #clpi-e-alpha {
-  background: linear-gradient(to right, rgba(0,0,0,0) 0%, #000 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
 #clpi-e-alpha:before,
 #clpi-l:before,
-.clpi-thumb:before  {
+.clpi-thumb:before {
   background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
@@ -174,7 +172,7 @@
 .clpi-u {
   width: 30px;
   height: 30px;
-  background: linear-gradient(118deg, rgb(33, 212, 253) 0%, rgb(183, 33, 255) 100%);
+  background: linear-gradient(118deg, #21d4fd 0%, #b721ff 100%);
   cursor: pointer;
   border-radius: 90px;
   display: none;
@@ -187,7 +185,6 @@
 .clpi-b-hex {
   position: relative;
 }
-
 .clpi-b-hex input {
   max-height: 100%;
   height: 30px;
@@ -224,7 +221,7 @@
   background: #ddd;
   width: 14px;
   height: 14px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 1px 1px 3px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   border: 2px solid #fff;
   position: relative;
@@ -233,7 +230,7 @@
 }
 
 .clpi-o-active {
-  box-shadow: 0 0 0 2px #0cf, 1px 1px 3px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 0 0 2px #0cf, 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
 #clpi-l {
@@ -247,7 +244,6 @@
 .clpi-l-angle {
   margin-left: 14px;
 }
-
 .clpi-l-angle input {
   width: 32px;
   height: 32px;

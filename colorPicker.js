@@ -168,6 +168,14 @@ var colorPicker = {
         this.thumb.style.background = this.value;
 
         this.input.value = this.value;
+      
+        let that = this;
+      
+        window.dispatchEvent(new CustomEvent('colorPickerTick', {
+            detail: {
+                el: that.input,
+            }
+        }));
     },
 
     triggerChange: function() {
